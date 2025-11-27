@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Parallax background layers -->
+  <div class="parallax">
+    <div class="par-layer layer-back"></div>
+    <div class="par-layer layer-mid"></div>
+    <div class="par-layer layer-front"></div>
+  </div>
+
+  <div class="container">
+    <div class="floating-orbs">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+
+    <h1 id="main-title">Happy Birthday, [Crush's Name]!</h1>
+    <p id="sub-text">I made something small for your special day.</p>
+
+    <!-- Button + interactive messages -->
+    <button id="start-btn">Click here for a surprise</button>
+
+    <div id="hidden-message" class="hidden">
+      <p id="message-text">You make the world brighter just by being in it ✨</p>
+    </div>
+
+    <!-- Self‑drawing line -->
+    <svg class="draw-svg" viewBox="0 0 500 100">
+      <path class="draw-path"
+        d="M10 60 Q 80 10, 150 60 T 290 60 T 430 60" />
+    </svg>
+
+    <!-- Confetti container -->
+    <div id="confetti-wrapper"></div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bg-music" src="bg-music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
